@@ -39,14 +39,14 @@ function move(element, player, color) {
 
     if (winning(board, player)) {
       setTimeout(function() {
-        alert("YOU WIN");
+        alert("YOU WIN...😢😢😢");
         reset();
         wins++;
       }, 500);
       return;
     } else if (round > 8) {
       setTimeout(function() {
-        alert("TIE");
+        alert("Tie..😱😓😟😏");
         reset();
         ties++;
       }, 500);
@@ -61,14 +61,14 @@ function move(element, player, color) {
       console.log(index);
       if (winning(board, aiPlayer)) {
         setTimeout(function() {
-          alert("YOU LOSE");
+          alert("YOU LOSE..😎😀😁😂😉");
           reset();
           loses++;
         }, 500);
         return;
       } else if (round === 0) {
         setTimeout(function() {
-          alert("tie");
+          alert("Tie..😱😅😏");
           reset();
           ties++;
         }, 500);
